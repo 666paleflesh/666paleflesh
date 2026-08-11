@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>哇什么情况</title>
+<style>
+    /* ===== 全局暗黑基调 ===== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0a0a0a;              /* 纯黑底 */
+      font-family: 'Segoe UI', sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      color: #e0dcdc;
+      background-image: radial-gradient(circle at 30% 40%, #1a0505 0%, #0a0a0a 80%);
+      /* 上面这行加了微弱的红色光晕，更有氛围 */
+    }
+
+    /* ===== 标题区 ===== */
+    h1 {
+      color: #ff1a1a;                  /* 炽红主标题 */
+      font-size: 2.8rem;
+      text-align: center;
+      text-shadow: 0 0 20px rgba(255, 26, 26, 0.6), 0 0 60px rgba(255, 0, 0, 0.3);
+      letter-spacing: 4px;
+      border-bottom: 2px solid #cc0000;
+      padding-bottom: 18px;
+      margin-bottom: 30px;
+    }
+    h1 small {
+      font-size: 1rem;
+      color: #aa8888;
+      display: block;
+      text-shadow: none;
+      letter-spacing: 2px;
+      margin-top: 6px;
+    }
+
+    /* ===== 卡片 ===== */
+    .card {
+      background: #141010;             /* 深灰红底 */
+      padding: 24px 28px;
+      margin: 20px 0;
+      border-radius: 16px;             /* 圆角保留 */
+      box-shadow: 0 4px 24px rgba(200, 0, 0, 0.25), inset 0 1px 0 rgba(255, 80, 80, 0.15);
+      border-left: 5px solid #cc0000;  /* 左侧红色光条 */
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 40px rgba(255, 0, 0, 0.35);
+    }
+
+    /* ===== 卡片内文字 ===== */
+    .card h2 {
+      color: #ff4d4d;
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+    .card p, .card li {
+      color: #c0b0b0;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+    .card ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .card ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #2a1a1a;
+    }
+    .card ul li:last-child {
+      border-bottom: none;
+    }
+
+    /* ===== 链接（角色名） ===== */
+    a {
+      color: #ff6666;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s, text-shadow 0.2s;
+    }
+    a:hover {
+      color: #ffaaaa;
+      text-shadow: 0 0 16px rgba(255, 50, 50, 0.8);
+      text-decoration: underline;
+    }
+
+    /* ===== 角色标签小点缀 ===== */
+    .tag {
+      display: inline-block;
+      background: #2a0a0a;
+      color: #ff7a7a;
+      padding: 2px 14px;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      border: 1px solid #661111;
+      margin-left: 10px;
+    }
+
+    /* ===== 底部 ===== */
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #2a1a1a;
+      color: #664444;
+      font-size: 0.9rem;
+    }
+  </style></head>
+<body>
+  <h1> 我想要得再多都不过分。</h1>
+  <div class="card">
+    <h2>* 角色列表</h2>
+    <ul>
+      <li><a href="角色档案/飒睦葵.html">飒睦葵</a> — 牛逼克拉斯</li>
+    </ul>
+    <p>※ 点击名字即可打开对应的角色档案（.txt文件）</p>
+  </div>
+  <div class="card">
+    <h2> 世界观速览</h2>
+    <p>这里全是神人</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>飒睦葵</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0a0a0a;
+      font-family: 'Segoe UI', sans-serif;
+      color: #c0b0b0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      background-image: radial-gradient(circle at 30% 20%, #1a0505 0%, #0a0a0a 80%);
+    }
+    .container {
+      max-width: 800px;
+      width: 100%;
+    }
+
+    /* 返回按钮 */
+    .back-btn {
+      display: inline-block;
+      color: #ff6666;
+      text-decoration: none;
+      margin-bottom: 30px;
+      border: 1px solid #661111;
+      padding: 8px 20px;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+    .back-btn:hover {
+      background: #cc0000;
+      color: #0a0a0a;
+      box-shadow: 0 0 30px rgba(255,0,0,0.3);
+    }
+
+    /* 角色名片 */
+    .profile {
+      background: #141010;
+      border-radius: 20px;
+      padding: 40px;
+      border-left: 6px solid #cc0000;
+      box-shadow: 0 8px 40px rgba(200,0,0,0.2);
+    }
+
+    .profile h1 {
+      color: #ff1a1a;
+      font-size: 3rem;
+      text-shadow: 0 0 30px rgba(255,26,26,0.4);
+      letter-spacing: 2px;
+    }
+    .profile .subtitle {
+      color: #885555;
+      font-size: 1.1rem;
+      margin-top: -5px;
+      margin-bottom: 25px;
+      border-bottom: 1px solid #2a1a1a;
+      padding-bottom: 15px;
+    }
+
+    /* 信息网格 */
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 30px;
+      margin: 20px 0;
+    }
+    .info-grid .label {
+      color: #885555;
+      font-weight: bold;
+    }
+    .info-grid .value {
+      color: #e0dcdc;
+    }
+
+    /* 引用/台词 */
+    .quote {
+      background: #1a0a0a;
+      border-left: 4px solid #ff1a1a;
+      padding: 20px 25px;
+      margin: 25px 0;
+      font-style: italic;
+      color: #ff7a7a;
+      font-size: 1.2rem;
+      border-radius: 0 12px 12px 0;
+    }
+
+    /* 关系图谱占位 */
+    .relation {
+      background: #0d0808;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 25px;
+      border: 1px dashed #661111;
+      text-align: center;
+      color: #664444;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #443333;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <a href="../index.html" class="back-btn">← 返回</a>
+
+    <div class="profile">
+      <h1>飒睦葵</h1>
+      <div class="subtitle">神秘杀人犯</div>
+
+      <div class="info-grid">
+        <span class="label">真名</span>
+        <span class="value">？？？</span>
+
+        <span class="label">年龄</span>
+        <span class="value">18</span>
+
+        <span class="label">性格</span>
+        <span class="value">豪爽，漠然</span>
+
+         </div>
+
+      <div class="quote">
+        「 我杀了你全家你气不气？ 」
+      </div>
+
+      <h3 style="color:#ff4d4d; margin-top:25px;">核心经历</h3>
+      <p style="margin-top:10px; line-height:1.8;">
+        在暴怒下杀死了许多同学和老师
+
+      </p>
+    </div>
+
+    <div class="footer">这期神了</div>
+  </div>
+</body>
+</html>
